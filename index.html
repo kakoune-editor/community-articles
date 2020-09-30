@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<div class="posts">
+
+    {% for post in site.posts %}
+
+    <article class="post">
+        <h2 class="post-title">
+            <a href="{{ site.baseurl }}{{ post.url }}" style="color: inherit">
+                {{ post.title }}
+            </a>
+        </h2>
+
+        <div class="post-excerpt">
+            {{ post.excerpt | truncatewords: 42 }}
+        </div>
+
+        <div class="post-metadata">
+            {% unless post.language or post.language == "english" %}
+
+            <img src="{{ site.baseurl }}/assets/img/flags/GB.png" style="vertical-align: middle">
+
+            {% elsif post.language == "french" %}
+
+            <img src="{{ site.baseurl }}/assets/img/flags/FR.png" style="vertical-align: middle">
+
+            {% endunless %}
+
+            · <time datetime="{{ post.date | date_to_xmlschema }}">
+                <i>{{ post.date | date_to_long_string: "ordinal" }}</i>
+            </time>
+
+            · by
+
+            {% unless post.author-handle %}
+
+            <a href="#">
+
+            {% else %}
+
+            <a href="https://github.com/{{ post.author-handle }}">
+
+            {% endunless %}
+
+                {{ post.author }}
+            </a>
+        </div>
+    </article>
+
+    {% endfor %}
+
+</div>
