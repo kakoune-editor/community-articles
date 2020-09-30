@@ -1,0 +1,42 @@
+community-articles
+==================
+
+This repository contains articles about the https://kakoune.org/[Kakoune]
+editor, written by the community.
+
+**It doesn't belong to anybody**.
+
+The first objective is to enable users who want to write a blog or an article
+related to Kakoune, but don't have a platform to host it on, to be allowed
+to express their thoughts. See the submission guidelines below, it's
+very easy!
+
+The second objective is to create a clonable collection of writings that new
+comers can glance at to learn more about Kakoune, or that more experienced
+users compliment with their thoughts.
+
+All writings are welcome, in any language, whether they praise or criticise
+the editor. Contributions are expected to be sent through PRs, to avoid
+leaving the repository entirely open to arbitrary contents, but **no changes
+to the writings themselves will be enforced prior to publishing**. The
+owners of this repository merely perform a sanity check to ensure the
+articles will render nicely, and that's it.
+
+Submitting an article
+---------------------
+
+1. Create a markdown file containing your article under the `_posts` directory
+2. Name it according to the template required by https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/adding-content-to-your-github-pages-site-using-jekyll#adding-a-new-post-to-your-site[Github Pages]
+3. Make sure the front matter contains the following values:
+
+	---
+	title: The title of your post
+	author: Your full name
+	license: An appropriate license for your writing, for example `CC BY-SA 4.0`
+	author-handle: Your Github handle (optional field)
+	language: language in which the article is written (optional field, defaults to `english`)
+	---
+
+4. Write the article, and submit the file via a
+https://github.com/kakoune-editor/community-articles/compare[Pull Request]
+   addressed to this repository
