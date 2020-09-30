@@ -1,0 +1,14 @@
+theme: jekyll-theme-cayman
+
+title: Kakoune Community Articles
+tagline: A multi-language repository of Kakoune-related articles, written by the community
+
+markdown: kramdown
+kramdown:
+    input: GFM
+
+plugins:
+    - jekyll-feed
+
+github:
+    - is_project_page: false
