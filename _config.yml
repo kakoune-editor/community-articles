@@ -1,7 +1,7 @@
 theme: jekyll-theme-cayman
 
 title: Kakoune Community Articles
-tagline: A multi-language repository of Kakoune-related articles, written by the community
+description: A collection of articles about Kakoune, in multiple languages, written by the community
 
 markdown: kramdown
 kramdown:
