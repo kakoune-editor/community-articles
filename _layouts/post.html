@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<h2 class="post-title">{{ page.title }}</h2>
+
+{{ content }}
+
+<div class="post-metadata">
+    — written by
+
+    {% unless page.author-handle %}
+
+    <a href="#">
+
+    {% else %}
+
+    <a href="https://github.com/{{ page.author-handle }}">
+
+    {% endunless %}
+
+        {{ page.author }}
+    </a>
+
+    · <time datetime="{{ page.date | date_to_xmlschema }}">
+        <i>{{ page.date | date_to_long_string: "ordinal" }}</i>
+    </time>
+
+    · license <strong>{{ page.license }}</strong>
+</div>
