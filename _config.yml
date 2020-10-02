@@ -1,4 +1,4 @@
-theme: jekyll-theme-cayman
+remote_theme: pages-themes/cayman
 
 title: Kakoune Community Articles
 description: A collection of articles about Kakoune, in multiple languages, written by the community
