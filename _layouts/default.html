@@ -23,9 +23,7 @@
       <link rel="shortcut icon" type="image/x-icon" href="{{ site.favicon }}">
     {% endif %}
 
-    {% if site.feed %}
-      <link href="{{ site.feed.path }}" type="application/atom+xml" rel="alternate" title="{{ site.title | default: site.github.repository_name }} Atom Feed">
-    {% endif %}
+    {% feed_meta %}
   </head>
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
