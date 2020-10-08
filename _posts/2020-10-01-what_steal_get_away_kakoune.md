@@ -75,26 +75,26 @@ And when it comes to convenience, Kakoune has some interesting assets your
 project could benefit from:
 
 - a header-only implementation of a diffing algorithm
-([diff.hh](https://github.com/mawww/kakoune/blob/master/src/diff.hh))
+([diff.hh](https://github.com/mawww/kakoune/blob/v2020.09.01/src/diff.hh))
 - a regex engine mostly following the ECMA syntax — this implementation
   allowed the project to drop
 [boost::regex](https://www.boost.org/doc/libs/1_74_0/libs/regex/doc/html/index.html)
   as a dependency
-([regex.hh](https://github.com/mawww/kakoune/blob/master/src/regex.hh))
+([regex.hh](https://github.com/mawww/kakoune/blob/v2020.09.01/src/regex.hh))
 - a minimal JSON (un)marshaller
-([json.hh](https://github.com/mawww/kakoune/blob/master/src/json.hh))
+([json.hh](https://github.com/mawww/kakoune/blob/v2020.09.01/src/json.hh))
 - a custom hash map implementation
-([hash_map.hh](https://github.com/mawww/kakoune/blob/master/src/hash_map.hh))
+([hash_map.hh](https://github.com/mawww/kakoune/blob/v2020.09.01/src/hash_map.hh))
 - wrappers for string types (e.g. string view) and associated utilities:
   join, wrap, split, quote, pad etc.
-([string.hh](https://github.com/mawww/kakoune/blob/master/src/string.hh)
-· [string_utils.hh](https://github.com/mawww/kakoune/blob/master/src/string_utils.hh))
+([string.hh](https://github.com/mawww/kakoune/blob/v2020.09.01/src/string.hh)
+· [string_utils.hh](https://github.com/mawww/kakoune/blob/v2020.09.01/src/string_utils.hh))
 - various functional range filters: filter, transform, gather, map etc.
-([ranges.hh](https://github.com/mawww/kakoune/blob/master/src/ranges.hh))
+([ranges.hh](https://github.com/mawww/kakoune/blob/v2020.09.01/src/ranges.hh))
 - an implementation of Go's defer statement that runs code once the execution
   flow leaves the current scope
 ([Go specification](https://golang.org/ref/spec#Defer_statements)
-· [utils.hh](https://github.com/mawww/kakoune/blob/master/src/utils.hh#L53))
+· [utils.hh](https://github.com/mawww/kakoune/blob/v2020.09.01/src/utils.hh#L53))
 
 The above snippets are not exactly drop-in, as they are still coupled to
 custom types defined for the editor, but should nonetheless be adaptable
