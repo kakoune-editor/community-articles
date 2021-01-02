@@ -9,16 +9,15 @@ layout: default
 <div class="post-metadata">
     — written by
 
-    {% unless page.author-handle %}
-
-    <a href="#">
-
-    {% else %}
+    {% if page.author-handle %}
 
     <a href="https://github.com/{{ page.author-handle }}">
+        <img src="https://raw.githubusercontent.com/primer/octicons/master/icons/mark-github-16.svg">
+    </a>
 
-    {% endunless %}
+    {% endif %}
 
+    <a href="#">
         {{ page.author }}
     </a>
 
