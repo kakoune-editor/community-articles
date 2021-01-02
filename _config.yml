@@ -15,3 +15,15 @@ plugins:
 
 github:
     - is_project_page: false
+
+collections:
+    authors:
+        output: true
+
+defaults:
+    - scope:
+        path: ""
+        type: authors
+      values:
+          layout: author
+          permalink: /authors/:slug

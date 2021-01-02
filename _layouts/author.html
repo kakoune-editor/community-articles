@@ -2,9 +2,25 @@
 layout: default
 ---
 
+{%- assign author = site.authors | where: "name": page.name | first -%}
+All articles authored by 
+{% if author.handle %}
+
+<a href="https://github.com/{{ author.handle }}">
+    <img src="https://raw.githubusercontent.com/primer/octicons/master/icons/mark-github-16.svg">
+</a>
+
+{% endif %}
+
+<span class="author-name">
+    {{ author.name }}
+</span>
+
 <div class="posts">
 
-    {% for post in site.posts %}
+    {%- assign author_posts = site.posts | where: "author", page.name
+    -%}
+    {%- for post in author_posts -%}
 
     <article class="post" style="margin-top: 2rem">
         <h2 class="post-title">
@@ -31,21 +47,6 @@ layout: default
             · <time datetime="{{ post.date | date_to_xmlschema }}">
                 <i>{{ post.date | date_to_long_string: "ordinal" }}</i>
             </time>
-
-            · by
-
-            {%- assign author = site.authors | where: "name": post.author | first -%}
-            {% if author.handle %}
-
-            <a href="https://github.com/{{ author.handle }}">
-                <img src="https://raw.githubusercontent.com/primer/octicons/master/icons/mark-github-16.svg">
-            </a>
-
-            {% endif %}
-
-            <a href="{{ site.baseurl }}/authors/{{ author.slug }}">
-                {{ author.name }}
-            </a>
         </div>
     </article>
 

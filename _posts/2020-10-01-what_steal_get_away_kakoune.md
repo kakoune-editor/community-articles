@@ -1,7 +1,6 @@
 ---
 title: What you could steal from the Kakoune code editor right now, and get away with it
 author: Frank Lenormand
-author-handle: lenormf
 license: CC BY-SA 4.0
 ---
 

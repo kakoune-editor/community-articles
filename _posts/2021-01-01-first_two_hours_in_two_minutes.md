@@ -1,7 +1,6 @@
 ---
 title: The first two hours of Kakoune in two minutes
 author: Frank Lenormand
-author-handle: lenormf
 license: CC BY-SA 4.0
 ---
 

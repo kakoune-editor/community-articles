@@ -1,7 +1,6 @@
 ---
 title: Results and their interpretation for the First Kakoune Community Survey
 author: Frank Lenormand
-author-handle: lenormf
 license: CC BY-SA 4.0
 ---
 
